@@ -8,6 +8,7 @@ body {
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
     padding: 0px;
+    margin: 0;
 }
 
 .title-form {
@@ -23,7 +24,7 @@ body {
     background-color: #222123;
     color: #fff;
     font-size: 20px;
-    width: 80%;
+    width: 90%;
 }
 
 .input-password:focus {
@@ -112,21 +113,18 @@ body {
             0 0 100px red;
     }
 }
-
-@media (max-width: 1000px) {
+  
+@media (max-width: 750px) {
     .input-password {
         width: 70%
-    }
-  }
-
-  
-@media (max-width: 600px) {
-    .input-password {
-        width: 50%
     }
 
     .title-form {
         font-size: 20px;
+    }
+
+    .button-hide {
+        font-size: 12px;
     }
     
   }
