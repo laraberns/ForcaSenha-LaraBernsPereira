@@ -34,3 +34,9 @@ Users can switch between password visibility options, allowing them to show or h
 ### Real-time Strength Progression
 
 As users type their password, the application displays the password's strength progression in real-time, giving instant feedback on the password's strength.
+
+ <p align="center">
+<a href="https://www.entra21.com.br/"> 
+<img src= "https://cdn.sonicadigital.com.br/entra21/storage/header/257/original-61f8610472d4f.png">
+</a>
+</p>
