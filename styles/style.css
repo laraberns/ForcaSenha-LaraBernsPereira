@@ -1,0 +1,39 @@
+body {
+    height: 100vh;
+    background-color: #222123;
+}
+
+.form {
+    background-color: #363634;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    padding: 20px 20px 60px 20px
+}
+
+.title-form {
+    color: #828183;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.input-password {
+    border: none;
+    border-radius: 0%;
+    padding: 20px;
+    background-color: #222123;
+    color: #fff;
+}
+
+.input-password:focus{
+    background-color: #222123;
+    box-shadow: none;
+    color: #fff;
+}
+
+.button-hide{
+    background-color: #363634;
+    color: #fff;
+    border: 10px solid #222123;
+    font-weight: bold;
+    padding: 10px 15px;
+}
