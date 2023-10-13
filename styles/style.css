@@ -1,5 +1,5 @@
 body {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #222123;
 }
 
@@ -7,13 +7,13 @@ body {
     background-color: #363634;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
-    padding: 20px 20px 20px 20px
+    padding: 0px;
 }
 
 .title-form {
     color: #828183;
     padding: 0;
-    margin: 20px 0;
+    margin: 30px 50px;
 }
 
 .input-password {
@@ -23,6 +23,7 @@ body {
     background-color: #222123;
     color: #fff;
     font-size: 20px;
+    width: 80%;
 }
 
 .input-password:focus {
@@ -42,9 +43,9 @@ body {
 }
 
 .passWordStrength {
-    margin: 40px 0 20px;
+    margin: 40px 0px 20px;
     width: 300px;
-    
+    margin: 40px 0 0 40px;
 }
 
 .strongPassword {
@@ -62,26 +63,85 @@ body {
     animation: neonRed 1000s ease-in-out infinite;
 }
 
+.lineGreen{
+    width:100%;
+    margin:0;
+    background:linear-gradient(green,#85FF64) bottom /* left or right or else */ no-repeat;
+    background-size:100% 10px;
+}
+
+.lineYellow{
+    width:50%;
+    margin:0;
+    background:linear-gradient(yellow,#FFD965) bottom /* left or right or else */ no-repeat;
+    background-size:100% 10px;
+}
+
+.lineRed{
+    width:20%;
+    margin:0;
+    background:linear-gradient(red,#FF3131) bottom /* left or right or else */ no-repeat;
+    background-size:100% 10px;
+}
+
+
+.divInputButton{
+    margin: 0px 50px;
+}
+
 @keyframes neonGreen {
     from {
         text-shadow: 0 0 50px #85FF64,
-                    0 0 20px #2BBF03,
-                    0 0 100px #2BBF03;
+            0 0 20px #2BBF03,
+            0 0 100px #2BBF03;
     }
 }
 
 @keyframes neonYellow {
     from {
         text-shadow: 0 0 50px yellow,
-                    0 0 20px yellow,
-                    0 0 100px yellow;
+            0 0 20px yellow,
+            0 0 100px yellow;
     }
 }
 
 @keyframes neonRed {
     from {
         text-shadow: 0 0 50px red,
-                    0 0 20px red,
-                    0 0 100px red;
+            0 0 20px red,
+            0 0 100px red;
     }
 }
+
+@media (max-width: 1000px) {
+    .input-password {
+        width: 70%
+    }
+  }
+
+  
+@media (max-width: 600px) {
+    .input-password {
+        width: 50%
+    }
+
+    .title-form {
+        font-size: 20px;
+    }
+    
+  }
+
+  #box {
+    height: 70px;
+    width: 70px;
+    position: relative;
+    border-bottom: 2px solid #0004ff;
+    background: #cccaca;
+  }
+  
+  #borderLeft {
+    border-left: 2px solid #0004ff;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+  }

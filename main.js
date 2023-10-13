@@ -4,6 +4,7 @@ const arrayNumbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 const arrayUpperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 const arrayLowerCase = []
 const passWordStrength = document.getElementById('idPassWordStrength')
+const linePassword = document.querySelector(".linePassword")
 
 // iterate arrayUpperCase into arrayLowercase
 for (let index = 0; index < arrayUpperCase.length; index++) {
@@ -58,23 +59,41 @@ function testCharacters() {
     if (totalPoints >= 9) {
         passWordStrength.innerText = "Strong Password"
         passWordStrength.classList.add('strongPassword');
-        passWordStrength.classList.remove('moderatePassword');
-        passWordStrength.classList.remove('weakPassword');
+        linePassword.classList.add('lineGreen');
+        removeModerate()
+        removeWeak()
     } else {
         if (totalPoints > 5) {
             passWordStrength.innerText = "Moderate Password"
             passWordStrength.classList.add('moderatePassword');
-            passWordStrength.classList.remove('weakPassword');
-            passWordStrength.classList.remove('strongPassword');
+            linePassword.classList.add('lineYellow');
+            removeStrong()
+            removeWeak()
         } else {
             if (totalPoints <= 5) {
                 passWordStrength.innerText = "Weak Password"
                 passWordStrength.classList.add('weakPassword');
-                passWordStrength.classList.remove('strongPassword');
-                passWordStrength.classList.remove('moderatePassword');
+                linePassword.classList.add('lineRed');
+                removeStrong()
+                removeModerate()
             }
         }
     }
+}
+
+function removeModerate() {
+    passWordStrength.classList.remove('moderatePassword');
+    linePassword.classList.remove('lineYellow');
+}
+
+function removeWeak() {
+    passWordStrength.classList.remove('weakPassword');
+    linePassword.classList.remove('lineRed');
+}
+
+function removeStrong() {
+    passWordStrength.classList.remove('strongPassword');
+    linePassword.classList.remove('lineGreen');
 }
 
 // getting points about the length of the password
