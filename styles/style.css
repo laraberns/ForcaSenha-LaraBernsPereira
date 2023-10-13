@@ -1,5 +1,5 @@
 body {
-    min-height: 100vh;
+    height: 100vh;
     background-color: #222123;
 }
 
@@ -64,29 +64,35 @@ body {
     animation: neonRed 1000s ease-in-out infinite;
 }
 
-.lineGreen{
-    width:100%;
-    margin:0;
-    background:linear-gradient(green,#85FF64) bottom /* left or right or else */ no-repeat;
-    background-size:100% 10px;
+.lineGreen {
+    width: 100%;
+    margin: 0;
+    background: linear-gradient(green, #85FF64) bottom
+        /* left or right or else */
+        no-repeat;
+    background-size: 100% 10px;
 }
 
-.lineYellow{
-    width:50%;
-    margin:0;
-    background:linear-gradient(yellow,#FFD965) bottom /* left or right or else */ no-repeat;
-    background-size:100% 10px;
+.lineYellow {
+    width: 50%;
+    margin: 0;
+    background: linear-gradient(yellow, #FFD965) bottom
+        /* left or right or else */
+        no-repeat;
+    background-size: 100% 10px;
 }
 
-.lineRed{
-    width:20%;
-    margin:0;
-    background:linear-gradient(red,#FF3131) bottom /* left or right or else */ no-repeat;
-    background-size:100% 10px;
+.lineRed {
+    width: 20%;
+    margin: 0;
+    background: linear-gradient(red, #FF3131) bottom
+        /* left or right or else */
+        no-repeat;
+    background-size: 100% 10px;
 }
 
 
-.divInputButton{
+.divInputButton {
     margin: 0px 50px;
 }
 
@@ -113,7 +119,7 @@ body {
             0 0 100px red;
     }
 }
-  
+
 @media (max-width: 750px) {
     .input-password {
         width: 70%
@@ -126,20 +132,20 @@ body {
     .button-hide {
         font-size: 12px;
     }
-    
-  }
 
-  #box {
+}
+
+#box {
     height: 70px;
     width: 70px;
     position: relative;
     border-bottom: 2px solid #0004ff;
     background: #cccaca;
-  }
-  
-  #borderLeft {
+}
+
+#borderLeft {
     border-left: 2px solid #0004ff;
     position: absolute;
     top: 50%;
     bottom: 0;
-  }
+}
