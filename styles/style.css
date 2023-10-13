@@ -7,7 +7,7 @@ body {
     background-color: #363634;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
-    padding: 20px 20px 60px 20px
+    padding: 20px 20px 20px 20px
 }
 
 .title-form {
@@ -22,18 +22,66 @@ body {
     padding: 20px;
     background-color: #222123;
     color: #fff;
+    font-size: 20px;
 }
 
-.input-password:focus{
+.input-password:focus {
     background-color: #222123;
     box-shadow: none;
     color: #fff;
 }
 
-.button-hide{
+.button-hide {
     background-color: #363634;
     color: #fff;
     border: 10px solid #222123;
     font-weight: bold;
     padding: 10px 15px;
+    width: 100px;
+    font-size: 14px;
+}
+
+.passWordStrength {
+    margin: 40px 0 20px;
+    width: 300px;
+    
+}
+
+.strongPassword {
+    color: greenyellow;
+    animation: neonGreen 1000s ease-in-out infinite;
+}
+
+.moderatePassword {
+    color: yellow;
+    animation: neonYellow 1000s ease-in-out infinite;
+}
+
+.weakPassword {
+    color: red;
+    animation: neonRed 1000s ease-in-out infinite;
+}
+
+@keyframes neonGreen {
+    from {
+        text-shadow: 0 0 50px #85FF64,
+                    0 0 20px #2BBF03,
+                    0 0 100px #2BBF03;
+    }
+}
+
+@keyframes neonYellow {
+    from {
+        text-shadow: 0 0 50px yellow,
+                    0 0 20px yellow,
+                    0 0 100px yellow;
+    }
+}
+
+@keyframes neonRed {
+    from {
+        text-shadow: 0 0 50px red,
+                    0 0 20px red,
+                    0 0 100px red;
+    }
 }
